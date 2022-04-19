@@ -1,4 +1,4 @@
-package com.crudapp.customercrud.customer.controllers;
+package com.crudapp.customercrud.customer.repositories;
 
 import com.crudapp.customercrud.customer.models.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;

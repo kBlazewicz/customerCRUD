@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer</title>
+</head>
+<body>
+<!--/*@thymesVar id="customer" type="com.crudapp.customercrud.customer.models.Customer"*/-->
+<form action="#" th:action="@{/addcustomer}" th:object="${customer}" method="post">
+    <label for="firstName">First Name</label>
+    <input type="text" th:field="*{firstName}" id="firstName" placeholder="First Name">
+    <span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></span>
+    <input type="submit" value="Add Customer">
+</form>
+</body>
+</html>
